@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class restartGameAtCollision : MonoBehaviour
+public class RestartGameAtCollision : MonoBehaviour
 {
     [SerializeField]
     string playerTag;

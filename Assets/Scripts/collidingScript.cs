@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-  public class collidingScript : MonoBehaviour
+  public class CollidingScript : MonoBehaviour
 {
     public GameObject goalText;
     public GameObject playerTrigger;

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class movingPlatformTrigger : MonoBehaviour
+public class MovingPlatformTrigger : MonoBehaviour
 {
     public GameObject playerBall;
     private void OnTriggerEnter(Collider other)

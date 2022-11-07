@@ -5,14 +5,14 @@ using UnityEngine;
 public class CoinScript : MonoBehaviour
 {
     [SerializeField]
-    private countingCoinsScript scoreCounting;
+    private CountingCoinsScript scoreCounting;
 
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {         
-            scoreCounting.IncreasePoint();                 
-            Destroy(gameObject);
+            scoreCounting.IncreasePoint();            
+            gameObject.SetActive(false);
         }
     }
 }

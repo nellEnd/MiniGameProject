@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class player_movement : MonoBehaviour
+public class Player_Movement : MonoBehaviour
  
 {
     [SerializeField]
@@ -10,37 +10,29 @@ public class player_movement : MonoBehaviour
 
     private Vector3 movement;
     private Rigidbody playerBall;
-
-    private Vector3 jump;
-    public float jumpForce = 2.0f;
-
-    private bool isGrounded;
+    
+    public float jumpForce = 2f;
 
     // Start is called before the first frame update
     void Start()
     {
-        playerBall = GetComponent<Rigidbody>();
-        jump = new Vector3(0.0f, 2.0f, 0.0f);
+        playerBall = GetComponent<Rigidbody>();        
     }
-    void OnCollisionStay()
-    {
-        isGrounded = true;
-    }
+
         // Update is called once per frame
        void Update()
-       {
-         Vector3 playerInput;
+       {         
 
-         playerInput.x = Input.GetAxis("Horizontal");
-         playerInput.z = Input.GetAxis("Vertical");
+         float x = Input.GetAxis("Horizontal");
+         float z = Input.GetAxis("Vertical");
 
-         Vector3 movement = new Vector3(playerInput.x * speed * Time.deltaTime, 0.0f, playerInput.z * speed * Time.deltaTime);
+         Vector3 movement = new Vector3(x * speed * Time.deltaTime, 0.0f, z * speed * Time.deltaTime);
          transform.Translate(movement);
+        
 
-          if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+          if (Input.GetKeyDown(KeyCode.Space))
           {
-           playerBall.AddForce(jump * jumpForce, ForceMode.Impulse);
-            isGrounded = false;
+            playerBall.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
           }
 
        }

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class copyPosition : MonoBehaviour
+public class CopyPosition : MonoBehaviour
 {
     [SerializeField]
     Transform cameraRig;
