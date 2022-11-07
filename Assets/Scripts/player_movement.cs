@@ -8,33 +8,49 @@ public class Player_Movement : MonoBehaviour
     [SerializeField]
     float speed;
 
-    private Vector3 movement;
     private Rigidbody playerBall;
-    
-    public float jumpForce = 2f;
+
+    [SerializeField]
+    private float jumpForce;
+
+    [SerializeField]
+    private float jumping;
+
+    private Vector3 jump;
+    private bool isGrounded;
 
     // Start is called before the first frame update
     void Start()
     {
+        jump = new Vector3(0f, jumping, 0f);
         playerBall = GetComponent<Rigidbody>();        
     }
 
         // Update is called once per frame
        void Update()
-       {         
+       {
 
-         float x = Input.GetAxis("Horizontal");
-         float z = Input.GetAxis("Vertical");
-
-         Vector3 movement = new Vector3(x * speed * Time.deltaTime, 0.0f, z * speed * Time.deltaTime);
-         transform.Translate(movement);
+        
+            if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+            {
+                playerBall.AddForce(jump * jumpForce, ForceMode.Impulse);
+                isGrounded= false;
+            }
         
 
-          if (Input.GetKeyDown(KeyCode.Space))
-          {
-            playerBall.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-          }
+        float x = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
+        float z = Input.GetAxis("Vertical") * speed * Time.deltaTime;
 
+        transform.Translate(x, 0, z);
+       
        }
+
+    
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.tag == ("Ground"))
+           isGrounded = true;
+    }
+   
 }
 

@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 1417257}
   m_Layer: 0
   m_Name: Platform (14)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -646,7 +646,7 @@ GameObject:
   - component: {fileID: 17998066}
   m_Layer: 0
   m_Name: Platform
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1339,7 +1339,7 @@ GameObject:
   - component: {fileID: 57215276}
   m_Layer: 0
   m_Name: FallingBridge (3)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1742,7 +1742,7 @@ GameObject:
   - component: {fileID: 79448876}
   m_Layer: 0
   m_Name: Platform (13)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3053,7 +3053,7 @@ GameObject:
   - component: {fileID: 142602962}
   m_Layer: 0
   m_Name: FallingBridge (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3891,7 +3891,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 189286908}
-  m_LocalRotation: {x: 0.16864716, y: 0.005224037, z: -0.00089383475, w: 0.9856623}
+  m_LocalRotation: {x: 0.16864586, y: -0.0064868317, z: 0.0011098991, w: 0.9856548}
   m_LocalPosition: {x: 0.40000057, y: 2.06, z: -5.731}
   m_LocalScale: {x: 0.44979015, y: 0.44979006, z: 0.44979003}
   m_Children: []
@@ -4046,7 +4046,7 @@ GameObject:
   - component: {fileID: 199611244}
   m_Layer: 0
   m_Name: MovingPlatform
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4575,7 +4575,7 @@ GameObject:
   - component: {fileID: 220679458}
   m_Layer: 0
   m_Name: Platform (5)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5797,7 +5797,7 @@ GameObject:
   - component: {fileID: 270938490}
   m_Layer: 0
   m_Name: FallingBridge (2)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8106,7 +8106,7 @@ GameObject:
   - component: {fileID: 417605591}
   m_Layer: 0
   m_Name: PushingBlock
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9341,7 +9341,7 @@ GameObject:
   - component: {fileID: 489887398}
   m_Layer: 0
   m_Name: FallingBridge (5)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10066,7 +10066,7 @@ GameObject:
   - component: {fileID: 509116143}
   - component: {fileID: 509116141}
   m_Layer: 0
-  m_Name: Player (1)
+  m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10134,7 +10134,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 7
-  jumpForce: 50
+  jumpForce: 10
+  jumping: 5
 --- !u!1 &545500265
 GameObject:
   m_ObjectHideFlags: 0
@@ -10537,7 +10538,7 @@ GameObject:
   - component: {fileID: 554652856}
   m_Layer: 0
   m_Name: Platform (8)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11360,7 +11361,7 @@ GameObject:
   - component: {fileID: 589264139}
   - component: {fileID: 589264138}
   m_Layer: 0
-  m_Name: Player
+  m_Name: playerbody
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15027,7 +15028,7 @@ GameObject:
   - component: {fileID: 806231823}
   m_Layer: 0
   m_Name: FallingBridge (4)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16037,7 +16038,7 @@ GameObject:
   - component: {fileID: 846736033}
   m_Layer: 0
   m_Name: Platform (11)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16165,7 +16166,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.1602871, y: 1}
+    m_SensorSize: {x: 1.6977649, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -16181,7 +16182,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 852598615}
-  m_LocalRotation: {x: 0.16864716, y: 0.005224037, z: -0.00089383475, w: 0.9856623}
+  m_LocalRotation: {x: 0.16864586, y: -0.0064868317, z: 0.0011098991, w: 0.9856548}
   m_LocalPosition: {x: -8.999999, y: 5.23, z: 6.648}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -18024,7 +18025,7 @@ GameObject:
   - component: {fileID: 959510523}
   m_Layer: 0
   m_Name: Platform (12)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18120,7 +18121,7 @@ GameObject:
   - component: {fileID: 970911912}
   m_Layer: 0
   m_Name: Platform (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19697,7 +19698,7 @@ GameObject:
   - component: {fileID: 1012636334}
   m_Layer: 0
   m_Name: FallingBridge (6)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20017,7 +20018,7 @@ GameObject:
   - component: {fileID: 1050615586}
   m_Layer: 0
   m_Name: Platform (10)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22472,7 +22473,7 @@ GameObject:
   - component: {fileID: 1176534301}
   m_Layer: 0
   m_Name: Platform (2)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22568,7 +22569,7 @@ GameObject:
   - component: {fileID: 1182690297}
   m_Layer: 0
   m_Name: Platform (9)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27385,7 +27386,7 @@ GameObject:
   - component: {fileID: 1419662337}
   m_Layer: 0
   m_Name: Platform (3)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29328,7 +29329,7 @@ GameObject:
   - component: {fileID: 1514368729}
   m_Layer: 0
   m_Name: FallingBridge
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31282,7 +31283,7 @@ GameObject:
   - component: {fileID: 1587757990}
   m_Layer: 0
   m_Name: Platform (6)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31669,7 +31670,7 @@ GameObject:
   - component: {fileID: 1614721432}
   m_Layer: 0
   m_Name: Platform (7)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33944,7 +33945,7 @@ GameObject:
   - component: {fileID: 1789390594}
   m_Layer: 0
   m_Name: Platform_down
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39802,7 +39803,7 @@ GameObject:
   - component: {fileID: 2081782672}
   m_Layer: 0
   m_Name: Platform (4)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
